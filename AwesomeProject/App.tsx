@@ -1,15 +1,15 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, Image, StyleSheet, Text} from 'react-native';
+import {View, ScrollView, Image, StyleSheet, Text} from 'react-native';
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scroll}>
         <Text style={styles.title}>Static Resource / Local Image</Text>
-        <Image
+        {/* <Image
           source={require('./assets/pngwing.com.png')} // simpan gambar di folder project /assets
           style={styles.image}
-        />
+        /> */}
 
         <Text style={styles.title}>Network Image</Text>
         <Image
@@ -28,7 +28,7 @@ const App = () => {
           style={styles.image}
         />
       </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 };
 
