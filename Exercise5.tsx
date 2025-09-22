@@ -4,6 +4,9 @@ import TextInput from './components/TextInput';
 import Button from './components/Button';
 
 const Login = () => {
+  const onSignIn = () => {
+    console.log('Button di Klik');
+  };
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome</Text>
@@ -15,9 +18,7 @@ const Login = () => {
         secureTextEntry={true}
       />
 
-      <Button label="Sign In" />
-
-      {/* Tambahan tombol login sosial */}
+      <Button label="Sign In" onPress={onSignIn} />
       <Button label="Sign in Google" color="red" colorText="#ffffff" />
       <Button label="Sign in Facebook" color="blue" colorText="#ffffff" />
       <Button label="Sign in Apple" color="black" colorText="#ffffff" />
